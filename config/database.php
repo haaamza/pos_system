@@ -57,7 +57,7 @@ return [
             // 'password' => env('DB_PASSWORD', "password"),
             'password' => $password,
             'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
+            'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
             'strict' => true,
