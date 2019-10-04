@@ -36,7 +36,7 @@
                             <!-- Dark Logo icon -->
                             {{--<img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />--}}
                             <!-- Light Logo icon -->
-                            <img src="{{ asset("img/brand/Icon.png") }}" alt="homepage" class="light-logo" />
+                            {{-- <img src="{{ asset("img/brand/favicon-blue.png") }}" alt="homepage" class="dark-logo" /> --}}
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
@@ -44,7 +44,7 @@
                          <!-- dark Logo text -->
                          {{--<img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />--}}
                          <!-- Light Logo text -->
-                         <img src="{{ asset("img/brand/Logo.png") }}" class="light-logo" alt="" /></span>
+                         <img style="height:20px; width:154.7px;"src="{{ asset("img/brand/Logo-bue.png") }}" class="dark-logo" alt="" /></span>
                     </a>
                 </div>
                 <div class="navbar-collapse">
