@@ -77,7 +77,7 @@ Route::post("/dealer/delete/{slug}", "DealerController@delete")->name("deleteDea
 Route::get("/configuration/units", "MeasurementUnitController@show")->name("showUnits");
 Route::post("/configuration/unit/store", "MeasurementUnitController@store")->name("storeUnit");
 Route::post("/configuration/unit/edit/{id}", "MeasurementUnitController@edit")->name("editUnit");
-Route::post("/configuration/unit/delete/{id}", "MeasurementUnit@delete")->name("deleteUnit");
+Route::post("/configuration/unit/delete/{id}", "MeasurementUnitController@delete")->name("deleteUnit");
 
 
 /* ================================ User Account Routes ================================ */
