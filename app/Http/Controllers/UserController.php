@@ -51,7 +51,7 @@ class UserController extends Controller {
             "password" => bcrypt($request["password"]),
             "is_superadmin" => boolval($admin),
             "is_staff" => boolval($staff),
-            "last_login" => ""
+            "last_login" => Carbon::now()->timestamp
         ]);
 
         // Attach roles
