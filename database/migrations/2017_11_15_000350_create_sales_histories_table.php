@@ -15,7 +15,7 @@ class CreateSalesHistoriesTable extends Migration {
             $table->increments('id');
             $table->integer("variation_id")->unsigned();
             $table->integer("batch_id")->unsigned();
-            $table->integer("sales_group_id")->unsigned();
+            $table->integer("sales_group_id")->unsigned()->nullable();
             $table->integer("quantity")->unsigned();
             $table->float("unit_cost", 12, 2);
             $table->float("total_cost", 12, 2);
@@ -25,7 +25,7 @@ class CreateSalesHistoriesTable extends Migration {
             // $table->float("discount_amount", 12, 2);
             $table->float("profit", 12, 2);
             // $table->boolean("is_wholesale")->default(false);
-            $table->string("payment_method");
+            $table->string("payment_method")->default("cash");
             $table->string("remarks");
             $table->timestamps();
         });
