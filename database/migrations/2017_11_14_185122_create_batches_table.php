@@ -22,7 +22,7 @@ class CreateBatchesTable extends Migration
             $table->float("retail_price", 12, 2);
             $table->float("wholesale_price", 12, 2);
             $table->boolean("on_sale")->default(false);
-            $table->date("expiry_date")->default(null);
+            // $table->date("expiry_date")->default(null);
             $table->timestamps();
 
             $table->index("batch_code");
