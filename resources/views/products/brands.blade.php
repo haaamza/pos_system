@@ -88,14 +88,6 @@
                                 </tr>
                                 </thead>
 
-                                <tfoot>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Brand Name</th>
-                                    <th>Contact Info</th>
-                                    <th>Actions</th>
-                                </tr>
-                                </tfoot>
                                 <tbody>
                                 @if($brands)
                                     @foreach($brands as $brand)

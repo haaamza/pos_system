@@ -84,15 +84,6 @@ $page_title = "View All Dealers";
                                     </tr>
                                 </thead>
 
-                                <tfoot>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Dealer Name</th>
-                                        <th>Phone</th>
-                                        <th>Brand</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </tfoot>
                                 <tbody>
                                 @if($dealers)
                                     @foreach($dealers as $dealer)

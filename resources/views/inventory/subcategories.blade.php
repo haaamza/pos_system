@@ -89,14 +89,6 @@ $page_title = $title;
                                 </tr>
                                 </thead>
 
-                                <tfoot>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>SubCategory</th>
-                                    <th>Category</th>
-                                    <th>Actions</th>
-                                </tr>
-                                </tfoot>
 
                                 <tbody>
                                 @if($subcategories)

@@ -67,13 +67,6 @@ $page_title = "Measurement Units";
                                     </tr>
                                 </thead>
 
-                                <tfoot>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Unit Name</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </tfoot>
                                 <tbody>
                                 @if($units)
                                     @foreach($units as $unit)

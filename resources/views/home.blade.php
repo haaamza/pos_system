@@ -69,7 +69,7 @@
 
     <!-- BEGIN TABLES -->
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <div class="card animated zoomIn">
                     <div class="card-body">
                         <h4 class="card-title">
@@ -100,45 +100,6 @@
                                             <td colspan="4">We're doing a good job!</td>
                                         </tr>
                                     @endif
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="card animated zoomIn">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            EXPIRED PRODUCTS
-                            @if(count($expired_products) > 5)<a href="" class="pull-right btn btn-outline btn-outline-inverse">See More</a>@endif
-                        </h4>
-                        <div class="table-responsive m-t-20">
-                            <table class="table stylish-table">
-                                <thead>
-                                <tr>
-                                    <th>Product Name</th>
-                                    <th>Expiry Date</th>
-                                    <th>Quantity</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @if(count($expired_products) > 0)
-                                    @foreach(array_chunk($expired_products, 5) as $e_products)
-                                        @foreach($e_products as $expired_product)
-                                            <tr>
-                                                <td>{{ $expired_product->variation->variation_name }}</td>
-                                                <td>{{ Carbon\Carbon::parse($expired_product->expiry_date)->format("j M Y") }}</td>
-                                                <td>{{ $expired_product->current_quantity }}</td>
-                                            </tr>
-                                        @endforeach
-                                    @endforeach
-                                @else
-                                    <tr>
-                                        <td colspan="4" class="text-center">Seems like we're doing a good job here. No expired product.</td>
-                                    </tr>
-                                @endif
                                 </tbody>
                             </table>
                         </div>

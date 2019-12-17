@@ -7,6 +7,8 @@ use App\Helpers\InventoryHelper;
 use App\Helpers\SalesHelper;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use App\Category;
+use App\POSProduct;
 
 class HomeController extends Controller {
     /**
@@ -72,8 +74,12 @@ class HomeController extends Controller {
             return view('home', compact("today_sales", "sales_increase", "low_stock",
                 "today_profit", "profit_increase", "inventory_summary", "total_items", "expired_products"));
         }
-
-        return view("pos.show");
+        else{
+          $categories = Category::all()->sortBy("name");
+          $products = new POSProduct();
+          $products = $products->all();
+          return view("pos.show", compact("categories", "products"));
+        }
     }
 
     /**

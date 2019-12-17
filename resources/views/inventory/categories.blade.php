@@ -75,13 +75,6 @@
                                     </tr>
                                 </thead>
 
-                                <tfoot>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Category Name</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </tfoot>
                                 <tbody>
                                     @if($categories)
                                         @foreach($categories as $category)

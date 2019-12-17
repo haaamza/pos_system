@@ -199,7 +199,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer">
-                &copy; {{ date("Y") }} Emi FoodLovers Integrated Services. All rights reserved.
+                &copy; {{ date("Y") }} Sinecure. All rights reserved.
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
