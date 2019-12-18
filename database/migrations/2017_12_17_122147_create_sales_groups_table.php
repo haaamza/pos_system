@@ -21,7 +21,7 @@ class CreateSalesGroupsTable extends Migration
             $table->float("change", 12, 2)->default(0);
             $table->string("balance_due", 250);
             $table->string("payment_method", 250);
-            $table->string("seller", 250);
+            // $table->string("seller", 250);
             $table->bigInteger("receipt_no")->default(null);
             $table->text("remarks");
             $table->timestamps();
