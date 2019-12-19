@@ -22,7 +22,7 @@ class CreateSalesGroupsTable extends Migration
             $table->string("balance_due", 250);
             $table->string("payment_method", 250);
             // $table->string("seller", 250);
-            $table->bigInteger("receipt_no")->default(null);
+            // $table->bigInteger("receipt_no")->default(0);
             $table->text("remarks");
             $table->timestamps();
         });
